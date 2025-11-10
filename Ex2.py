@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # 🔑 Configure your API key
-genai.configure(api_key="AIzaSyDjq8_8igl3aTtfvYKkSpQkqy_tWmshVQI")
+genai.configure("Enter your API key")
 
 # Streamlit App
 st.header('Visual Question Answering App')
@@ -30,3 +30,4 @@ if st.button("GET RESPONSE"):
         st.markdown(response.text)
     else:
         st.warning("⚠️ Please upload an image first!")
+
